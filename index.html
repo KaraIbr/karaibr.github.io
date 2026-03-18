@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karina Ibarra Morales</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<section class="navsection sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-blur">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 256 256">
+          <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/>
+        </svg>
+      </a>
+      <ul class="navbar-nav d-flex flex-row justify-content-center mb-lg-0">
+        <li class="nav-item ml-1">
+          <a class="nav-link active me-2" href="https://linkedin.com/in/karina-ibarra-m" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 256 256">
+              <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item ml-1">
+          <a class="nav-link me-2" href="https://github.com/KaraIbr" target="_blank" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 256 256">
+              <path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item ml-1">
+          <a class="nav-link" href="mailto:karina.servicesti@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" viewBox="0 0 256 256">
+              <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</section>
+
+<!-- HERO -->
+<section class="heroSection d-flex flex-column full-vh">
+  <canvas id="dustCanvas" style="z-index:0;"></canvas>
+  <div class="full-vh d-flex flex-column">
+    <h1 class="text-center herotitle">Karina Ibarra</h1>
+    <h2 class="mt-5 text-center subtitleFont p-2 neutralFonts">Web & Digital Experience Manager</h2>
+    <p class="text-center subtitleFont p-2">"Building things that run in production — from zero to scale."</p>
+    <div class="marquee-container mt-auto container mb-lg-2 mb-5">
+      <div class="marque-gradiant"></div>
+      <div class="marquee-content">
+        <span class="marqueeText">React</span>
+        <span class="marqueeText">JavaScript ES6+</span>
+        <span class="marqueeText">Python</span>
+        <span class="marqueeText">Django · FastAPI</span>
+        <span class="marqueeText">Node.js</span>
+        <span class="marqueeText">Tailwind CSS</span>
+        <span class="marqueeText">AWS · DigitalOcean</span>
+        <span class="marqueeText">Docker</span>
+        <span class="marqueeText">Pentesting</span>
+        <span class="marqueeText">OSINT · Wireshark</span>
+        <span class="marqueeText">HubSpot CRM</span>
+        <span class="marqueeText">Google Analytics 4</span>
+        <span class="marqueeText">Blockchain · Web3</span>
+        <span class="marqueeText">OpenCV · AI</span>
+        <span class="marqueeText">n8n · WhatsApp API</span>
+        <span class="marqueeText">Git · Linux · VPS</span>
+        <span class="marqueeText">React</span>
+        <span class="marqueeText">JavaScript ES6+</span>
+        <span class="marqueeText">Python</span>
+        <span class="marqueeText">Django · FastAPI</span>
+        <span class="marqueeText">Node.js</span>
+        <span class="marqueeText">Tailwind CSS</span>
+        <span class="marqueeText">AWS · DigitalOcean</span>
+        <span class="marqueeText">Docker</span>
+        <span class="marqueeText">Pentesting</span>
+        <span class="marqueeText">OSINT · Wireshark</span>
+        <span class="marqueeText">HubSpot CRM</span>
+        <span class="marqueeText">Google Analytics 4</span>
+        <span class="marqueeText">Blockchain · Web3</span>
+        <span class="marqueeText">OpenCV · AI</span>
+        <span class="marqueeText">n8n · WhatsApp API</span>
+        <span class="marqueeText">Git · Linux · VPS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="summary-details flex-col-wise w-100 full-vh">
+  <section class="container full-vh row">
+    <div class="displaycontentdiv col-lg-6 col-12 d-flex flex-column justify-content-center">
+      <h1 id="tiitleWord" class="titleFont">Karina Patricia<br>Ibarra Morales</h1>
+      <p id="subtitleWord" class="subtitleFont">Digital Solutions Lead · Aguascalientes, MX</p>
+      <div class="normalFont mt-2">
+        <div id="paragraphLines" class="normalFont text-justify">
+          Digital leader with 5+ years of experience at the intersection of web engineering, cybersecurity, and B2B marketing strategy. Directed cross-functional teams, managed corporate digital infrastructure across multiple business units, and founded technology ventures currently operating in production. International academic experience at Tampere University, Finland. Recognized at national and international level.
+        </div>
+        <div class="mt-3 d-flex flex-wrap gap-2">
+          <span class="bubbleData normalFont">🏆 1st Place — Blockchain Hackathon MX</span>
+          <span class="bubbleData normalFont">🥇 Emprende MAEN Award</span>
+          <span class="bubbleData normalFont">🌍 Tampere University, Finland</span>
+          <span class="bubbleData normalFont">🤝 HUB Divergente Ambassador</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-12 my-0 mt-md-5">
+      <section class="container center_Div">
+        <div class="circleContainer">
+          <div id="center_circle">
+            <div id="title">
+              <div class="typewriter">
+                <p id="heading" class="headingFont">Karina Ibarra</p>
+              </div>
+            </div>
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="#e1e1e1" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
+            </div>
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="#e1e1e1" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="#e1e1e1" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="#e1e1e1" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+            </div>
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="#e1e1e1" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z"/></svg>
+            </div>
+            <div class="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="#e1e1e1" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects flex-col-wise full-vh">
+  <div class="container flex-col-wise">
+    <div class="projectContainer row g-3">
+      <div class="col-lg-12 col-12">
+        <span class="titleFont mx-2">Projects</span>
+      </div>
+
+      <div class="projectItem col-lg-8 col-12">
+        <div class="card projectCard" onclick="window.open('https://followback.com.mx','_blank')">
+          <div class="proj-img"><img src="images/followback.png" alt="Followback"></div>
+          <div class="proj-body">
+            <div class="d-flex justify-content-between align-items-start mb-1">
+              <h3 class="subtitleFont mb-0">Followback</h3>
+              <span class="proj-live">Live ↗</span>
+            </div>
+            <p class="normalFont">B2B customer loyalty platform for local businesses. Founded, built and launched — active users, real revenue.</p>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="bubbleData normalFont">B2B SaaS</span><span class="bubbleData normalFont">React</span><span class="bubbleData normalFont">Node.js</span><span class="bubbleData normalFont">Entrepreneurship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectItem col-lg-4 col-6">
+        <div class="card projectCard">
+          <div class="proj-img"><img src="images/pos-multitenant.png" alt="POS"></div>
+          <div class="proj-body">
+            <h3 class="subtitleFont">POS Multitenant</h3>
+            <p class="normalFont">Point-of-sale as a service with WhatsApp Business API & n8n automation. Multitenant B2B.</p>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="bubbleData normalFont">SaaS</span><span class="bubbleData normalFont">WhatsApp API</span><span class="bubbleData normalFont">n8n</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectItem col-lg-4 col-6">
+        <div class="card projectCard">
+          <div class="proj-img"><img src="images/lunacornea.png" alt="LunaCornea"></div>
+          <div class="proj-body">
+            <h3 class="subtitleFont">LunaCornea</h3>
+            <p class="normalFont">Optical practice management software. GDPR & LDPPP compliance by design. Delivered to paying clients.</p>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="bubbleData normalFont">SaaS</span><span class="bubbleData normalFont">GDPR</span><span class="bubbleData normalFont">Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectItem col-lg-4 col-6">
+        <div class="card projectCard" onclick="window.open('https://sialtlogistics.com','_blank')">
+          <div class="proj-img proj-img-placeholder">sialtlogistics.com ↗</div>
+          <div class="proj-body">
+            <div class="d-flex justify-content-between align-items-start mb-1">
+              <h3 class="subtitleFont mb-0">SIALT Logistics</h3>
+              <span class="proj-live">↗</span>
+            </div>
+            <p class="normalFont">Corporate frontend for logistics company. React & JavaScript.</p>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="bubbleData normalFont">Frontend</span><span class="bubbleData normalFont">React</span><span class="bubbleData normalFont">Logistics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectItem col-lg-4 col-6">
+        <div class="card projectCard">
+          <div class="proj-img"><img src="images/iot-vision.png" alt="IoT Vision Glasses"></div>
+          <div class="proj-body">
+            <h3 class="subtitleFont">IoT Vision Glasses</h3>
+            <p class="normalFont">R&D — Autonomous navigation for visually impaired. OpenCV + Google Maps + IoT street-level connectivity.</p>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="bubbleData normalFont">R&D</span><span class="bubbleData normalFont">OpenCV</span><span class="bubbleData normalFont">IoT</span><span class="bubbleData normalFont">Social Impact</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectItem col-lg-4 col-6">
+        <div class="card projectCard">
+          <div class="proj-img"><img src="images/emg-signal.png" alt="EMG Research"></div>
+          <div class="proj-body">
+            <h3 class="subtitleFont">EMG Quadriceps R&D</h3>
+            <p class="normalFont">Clinical research — EMG sensors + real-time tracking for pediatric micturition rehab, with kinesiologists & biomedical engineers.</p>
+            <div class="d-flex flex-wrap gap-1 mt-2">
+              <span class="bubbleData normalFont">R&D</span><span class="bubbleData normalFont">OpenCV</span><span class="bubbleData normalFont">Health Tech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experienceSection flex-col-wise full-vh mt-5">
+  <div class="container d-flex flex-column justify-content-center mt-5">
+    <h1 class="titleFont text-left mt-5">Work Experience</h1>
+    <div class="experience">
+
+      <div class="experienceCard row">
+        <div class="col-lg-3 col-12">
+          <p class="subtitleFont">01.</p>
+          <p class="subtitleFont">Biotempak</p>
+          <p class="normalFont exp-company">Deckdepot · Humitech · 2021–2024</p>
+        </div>
+        <div class="col-lg-9 col-12">
+          <p class="collapsible normalFont pt-4">Web & Digital Experience Manager — Owned end-to-end digital operations across a three-unit B2B corporate structure with direct accountability to commercial outcomes.</p>
+          <div class="content normalFont">
+            <p>Held full accountability for digital operations across a three-unit corporate structure — leading web strategy, security infrastructure, MarTech stack and cross-functional team leadership. Detected and neutralized a live security breach — forensic audit, malware eradication, VPS rebuild and full vulnerability remediation. Re-engineered CRM and ERP at source-code level, automating workflows and compressing the full B2B sales cycle. Deployed audience-segmented web experiences, landing pages and campaign assets driving pipeline growth, lead generation and organic traffic improvement.</p>
+          </div>
+          <p class="normalFont">Tech Stack:</p>
+          <div class="d-flex flex-row flex-wrap">
+            <span class="bubbleData normalFont mx-2 my-1">React</span>
+            <span class="bubbleData normalFont mx-2 my-1">JavaScript</span>
+            <span class="bubbleData normalFont mx-2 my-1">HubSpot CRM</span>
+            <span class="bubbleData normalFont mx-2 my-1">WordPress</span>
+            <span class="bubbleData normalFont mx-2 my-1">Wireshark</span>
+            <span class="bubbleData normalFont mx-2 my-1">VPS / Linux</span>
+            <span class="bubbleData normalFont mx-2 my-1">GA4 / SEO</span>
+            <span class="bubbleData normalFont mx-2 my-1">GDPR / CCPA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experienceCard row mt-4">
+        <div class="col-lg-3 col-12">
+          <p class="subtitleFont">02.</p>
+          <p class="subtitleFont">Cybersecurity Consultant</p>
+          <p class="normalFont exp-company">Independent · 2021–Present</p>
+        </div>
+        <div class="col-lg-9 col-12">
+          <p class="collapsible normalFont pt-4">Security audits for local companies — penetration testing, OSINT reconnaissance, Wireshark analysis and regulatory compliance advisory.</p>
+          <div class="content normalFont">
+            <p>Retained by local companies to assess and harden their digital security posture — bringing enterprise-grade methodology to organizations without dedicated security infrastructure. Executed end-to-end security audits including penetration testing, vulnerability mapping, network traffic analysis via Wireshark, and threat reconnaissance using theHarvester and Google Dorks. Delivered prioritized remediation roadmaps and advised on GDPR, LDPPP and CCPA compliance.</p>
+          </div>
+          <p class="normalFont">Tech Stack:</p>
+          <div class="d-flex flex-row flex-wrap">
+            <span class="bubbleData normalFont mx-2 my-1">Pentesting</span>
+            <span class="bubbleData normalFont mx-2 my-1">OSINT</span>
+            <span class="bubbleData normalFont mx-2 my-1">Wireshark</span>
+            <span class="bubbleData normalFont mx-2 my-1">theHarvester</span>
+            <span class="bubbleData normalFont mx-2 my-1">Google Dorks</span>
+            <span class="bubbleData normalFont mx-2 my-1">GDPR · LDPPP · CCPA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experienceCard row mt-4">
+        <div class="col-lg-3 col-12">
+          <p class="subtitleFont">03.</p>
+          <p class="subtitleFont">Freelance Web Developer</p>
+          <p class="normalFont exp-company">Mexico & International · 2021–Present</p>
+        </div>
+        <div class="col-lg-9 col-12">
+          <p class="collapsible normalFont pt-4">End-to-end digital products — custom web apps, e-commerce platforms and automated sales pipelines for clients across Mexico and internationally.</p>
+          <div class="content normalFont">
+            <p>Designed and delivered custom web applications, e-commerce platforms and landing pages for local and international clients. Engineered CRM integrations and automated sales pipelines via n8n and WhatsApp Business API. Developed backend APIs with Django and FastAPI, and modern frontend interfaces with React, Tailwind and Motion Design. Managed full project lifecycle from commercial negotiation through deployment and post-launch optimization.</p>
+          </div>
+          <p class="normalFont">Tech Stack:</p>
+          <div class="d-flex flex-row flex-wrap">
+            <span class="bubbleData normalFont mx-2 my-1">React</span>
+            <span class="bubbleData normalFont mx-2 my-1">Python · Django · FastAPI</span>
+            <span class="bubbleData normalFont mx-2 my-1">n8n</span>
+            <span class="bubbleData normalFont mx-2 my-1">WhatsApp API</span>
+            <span class="bubbleData normalFont mx-2 my-1">Tailwind</span>
+            <span class="bubbleData normalFont mx-2 my-1">MySQL · MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills flex-col-wise full-vh mt-5">
+  <div class="container">
+    <h1 class="mt-5 titleFont text-left shadow">Skills</h1>
+    <div class="row p-0 m-0">
+      <div class="skillsContainer text-center col-lg-6 col-12">
+        <div class="row">
+          <div class="col-lg-2 col-4 p-0"><p class="skillpara" data-content="React">React</p></div>
+          <div class="col-lg-3 col-4 p-0"><p class="skillpara" data-content="JavaScript">JavaScript</p></div>
+          <div class="col-lg-3 col-4 p-0"><p class="skillpara" data-content="Python">Python</p></div>
+          <div class="col-lg-4 col-6 p-0"><p class="skillpara" data-content="Node.js">Node.js</p></div>
+          <div class="col-lg-4 col-6 p-0"><p class="skillpara" data-content="Django">Django</p></div>
+          <div class="col-lg-4 col-4 p-0"><p class="skillpara" data-content="FastAPI">FastAPI</p></div>
+          <div class="col-lg-4 col-4 p-0"><p class="skillpara" data-content="Tailwind">Tailwind</p></div>
+          <div class="col-lg-4 col-4 p-0"><p class="skillpara" data-content="C++">C++</p></div>
+          <div class="col-lg-4 col-6 p-0"><p class="skillpara" data-content="Pentesting">Pentesting</p></div>
+          <div class="col-lg-4 col-6 p-0"><p class="skillpara" data-content="OSINT">OSINT</p></div>
+          <div class="col-lg-4 col-6 p-0"><p class="skillpara" data-content="Wireshark">Wireshark</p></div>
+          <div class="col-lg-6 col-6 p-0"><p class="skillpara" data-content="HubSpot">HubSpot CRM</p></div>
+          <div class="col-lg-6 col-6 p-0"><p class="skillpara" data-content="GA4">Google Analytics 4</p></div>
+          <div class="col-lg-3 col-4 p-0"><p class="skillpara" data-content="AWS">AWS</p></div>
+          <div class="col-lg-3 col-4 p-0"><p class="skillpara" data-content="Docker">Docker</p></div>
+          <div class="col-lg-3 col-4 p-0"><p class="skillpara" data-content="Linux">Linux</p></div>
+          <div class="col-lg-3 col-4 p-0"><p class="skillpara" data-content="Git">Git</p></div>
+          <div class="col-lg-4 col-6 p-0"><p class="skillpara" data-content="OpenCV">OpenCV</p></div>
+          <div class="col-lg-4 col-6 p-0"><p class="skillpara" data-content="Blockchain">Blockchain</p></div>
+          <div class="col-lg-4 col-4 p-0"><p class="skillpara" data-content="n8n">n8n</p></div>
+          <div class="col-lg-4 col-4 p-0"><p class="skillpara" data-content="Figma">Figma</p></div>
+          <div class="col-lg-8 col-4 p-0"><p class="skillpara" data-content="SEO">SEO · SEM · CRO</p></div>
+        </div>
+      </div>
+      <div class="skillsDiscription col-lg-6 col-12">
+        <div class="main-content active p-2" id="mainContent">
+          <h3>React</h3>
+          <p class="normalFont text-justify">Building modern, component-driven interfaces and SPAs. Used in Followback, SIALT Logistics, LunaCornea and multiple client projects — combined with Tailwind CSS and Motion Design for production-grade results.</p>
+          <p class="normalFont text-justify">Experience with hooks, context API, custom components and state management. Deployed on Vercel, DigitalOcean and AWS.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section class="connect flex-col-wise full-vh mt-5">
+  <div class="container">
+    <div class="row d-flex align-items-between">
+      <div class="col-lg-6 col-12 connectMessage d-flex flex-column">
+        <div>
+          <span style="font-size:140px;line-height:140px;">L</span><span style="font-size:60px;">et's </span>
+          <br>
+          <span style="font-size:140px;line-height:140px;">C</span><span style="font-size:60px;">onnect</span>
+        </div>
+        <p class="normalFont mt-3">Available for full-time roles, consulting projects and technical collaborations. Based in Aguascalientes, Mexico — open to remote and hybrid opportunities worldwide.</p>
+        <div class="mt-3 d-flex flex-wrap gap-2">
+          <a href="https://linkedin.com/in/karina-ibarra-m" target="_blank" class="bubbleData normalFont" style="text-decoration:none;">LinkedIn ↗</a>
+          <a href="https://github.com/KaraIbr" target="_blank" class="bubbleData normalFont" style="text-decoration:none;">GitHub ↗</a>
+          <a href="https://followback.com.mx" target="_blank" class="bubbleData normalFont" style="text-decoration:none;">Followback ↗</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+  <p class="titleFont mx-2 my-2">Message</p>
+  <form
+    action="https://formspree.io/f/xlgpoyjq"
+    method="POST"
+    id="contactForm"
+    class="row gap-2 contactForm"
+  >
+    <div class="contactForm col-12">
+      <input name="Name" type="text" placeholder="Name" required>
+    </div>
+    <div class="col-12">
+      <input name="email" type="email" placeholder="Email" required>
+    </div>
+    <div class="col-12">
+      <input name="Subject" type="text" placeholder="Subject">
+    </div>
+    <div class="col-12">
+      <textarea name="message" placeholder="Message" rows="6" cols="50" required></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit">Send</button>
+      <p id="form-status" style="font-size:0.8rem;color:#888;margin-top:8px;"></p>
+    </div>
+  </form>
+</div>
+    </div>
+  </div>
+</section>
+
+<footer class="flex-row-wise">
+  <a href="#">Karina Ibarra Morales</a>
+  <span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#a8a8a8" viewBox="0 0 256 256">
+      <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z"/>
+    </svg>
+  </span>
+  <a href="mailto:karina.servicesti@gmail.com">karina.servicesti@gmail.com</a>
+</footer>
+
+<script src="hero.js"></script>
+<script src="collapse.js"></script>
+<script type="module" src="skills.js"></script>
+<script src="script.js"></script>
+<script>
+function sendMsg() {
+  const n = document.getElementById('Name').value;
+  const e = document.getElementById('Email').value;
+  const s = document.getElementById('Subject').value;
+  const m = document.getElementById('Message').value;
+  if (!n || !e || !m) { alert('Please fill in name, email and message.'); return; }
+  window.location.href = `mailto:karina.servicesti@gmail.com?subject=${encodeURIComponent(s || 'Portfolio Contact')}&body=${encodeURIComponent('From: '+n+'\nEmail: '+e+'\n\n'+m)}`;
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
